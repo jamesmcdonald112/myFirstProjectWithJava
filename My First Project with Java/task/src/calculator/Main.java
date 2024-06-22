@@ -4,17 +4,26 @@ import com.sun.source.tree.Tree;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Scanner;
 import java.util.TreeMap;
 
 public class Main {
+    private  static Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
         Map<String, Double> prices = priceList();
         printPrices(prices);
         System.out.println(" ");
         Map<String, Double> incomeList = incomeList();
         printEarnedAmount(incomeList);
-        printIncome(calculateIncome(incomeList));
+        double income = calculateIncome(incomeList);
+        printIncome(income);
 
+        double staff = expense("Staff expenses:");
+        double other = expense("Other expenses:");
+
+        double netIncome = income - staff - other;
+
+        System.out.println("Net income: $" + netIncome);
     }
 
     public static void printPrices(Map<String, Double> prices) {
@@ -68,4 +77,11 @@ public class Main {
     private static void printIncome(double sum) {
         System.out.println("Income: " + sum);
     }
+
+    private static double expense(String expense) {
+        System.out.println(expense);
+        return scanner.nextDouble();
+    }
+
+
 }

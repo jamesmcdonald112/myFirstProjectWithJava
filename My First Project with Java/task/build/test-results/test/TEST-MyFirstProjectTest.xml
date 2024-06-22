@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="MyFirstProjectTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-06-22T12:25:35" hostname="James-MacBookPro-New.local" time="0.043">
+<testsuite name="MyFirstProjectTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-06-22T20:36:13" hostname="James-MacBookPro-New.local" time="0.048">
   <properties/>
-  <testcase name="start" classname="MyFirstProjectTest" time="0.043"/>
+  <testcase name="start" classname="MyFirstProjectTest" time="0.048"/>
   <system-out><![CDATA[?[1;31m
 Start test 1?[0m
+Prices:
+Bubblegum: $2.0
+Doughnut: $2.5
+Ice cream: $5.0
+Milk chocolate: $4.0
+Pancake: $3.2
+Toffee: $0.2
+ 
 Earned amount:
 Bubblegum: $202.0
 Doughnut: $1075.0
@@ -12,6 +20,11 @@ Milk chocolate: $1680.0
 Pancake: $80.0
 Toffee: $118.0
 Income: 5405.0
+Staff expenses:
+> 4170
+Other expenses:
+> 220
+Net income: $1015.0
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
