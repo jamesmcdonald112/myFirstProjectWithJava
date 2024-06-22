@@ -16,11 +16,14 @@ public class Main {
         Map<String, Double> incomeList = incomeList();
         printEarnedAmount(incomeList);
         double income = calculateIncome(incomeList);
+        System.out.println(" ");
         printIncome(income);
+        System.out.println(" ");
 
         double staff = expense("Staff expenses:");
         double other = expense("Other expenses:");
 
+        System.out.println(" ");
         double netIncome = income - staff - other;
 
         System.out.println("Net income: $" + netIncome);
